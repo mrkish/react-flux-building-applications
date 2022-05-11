@@ -1,5 +1,6 @@
 import React from "react";
 import TextInput from "./common/TextInput";
+import SelectInput from "./common/SelectInput";
 
 function CourseForm(props) {
   return (
@@ -9,9 +10,8 @@ function CourseForm(props) {
         label="Title"
         name="title"
         onChange={props.onChange}
-        value={props.course.category}
+        value={props.course.title}
       />
-
       <div className="form-group">
         <label htmlFor="author">Author</label>
         <div className="field">
